@@ -10,7 +10,7 @@ body {
 }
 
 .limite-conteudo {
-    max-width: 1000px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
@@ -18,6 +18,27 @@ a {
     font-weight: 500;
     text-decoration: none;
     color: black;
+    font-size: 17px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+#sobre, #pontos-turisticos subsection {
+    padding: 50px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#sobre img, #pontos-turisticos img {
+    border-radius: 3px;
+    width: 100%;
+    box-shadow: 3px 5px 7px 0px black;
 }
 
 /* Header */
@@ -46,4 +67,97 @@ header section {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
+}
+
+/* Cover */
+
+#cover {
+    position: relative;
+    background: url("../assets/bg-estacao.png");
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    color: white;
+}
+
+h1, h2 {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 61px;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+#cover::after { /* Overlay :) */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/* Sobre */
+
+#sobre {
+    padding-bottom: 50px;
+}
+
+#sobre p {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+#sobre p::first-letter {
+    font-size: 27px;
+    margin-right: 1px;
+}
+
+/* Pontos Turísticos */
+
+#pontos-turisticos {
+    background: #E9E9E9;
+    padding-bottom: 50px;
+}
+
+#pontos-turisticos subsection div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
+    display: flex;
+}
+
+ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../assets/seta.png");
+    background-size: contain;
+    margin-right: 10px;
+}
+
+#pontos-turisticos subsection div p span {
+    font-size: 18px;
+    font-weight: 500;
 }
