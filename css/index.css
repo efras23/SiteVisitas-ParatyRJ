@@ -200,3 +200,12 @@ ul li::before {
 }
 
 /* Rodapé */
+
+#rodape {
+    min-height: 50px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5C002;
+}
